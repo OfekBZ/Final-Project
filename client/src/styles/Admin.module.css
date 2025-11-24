@@ -1,0 +1,97 @@
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.label {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.value {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.errorText {
+  color: var(--color-error);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.button {
+  border: 1px solid var(--color-border);
+  background: var(--color-primary);
+  color: #0b1223;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  background: #0f172a;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background: #0b1223;
+  color: var(--color-text);
+}
+
+.hint {
+  color: var(--color-text-muted);
+  margin-left: 0.35rem;
+}
+
+.deleteBtn {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: #fca5a5;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
