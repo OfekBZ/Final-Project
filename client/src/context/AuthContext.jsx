@@ -32,6 +32,14 @@ export const AuthProvider = ({ children }) => {
     setAuth({ user: null, token: null });
   };
 
+  const updateUser = (user) => {
+    setAuth((prev) => {
+      if (!prev.token) return prev;
+      persist(user, prev.token);
+      return { ...prev, user };
+    });
+  };
+
   const addFavoriteLocal = (bookId) => {
     setAuth((prev) => {
       if (!prev.user) return prev;
@@ -59,6 +67,7 @@ export const AuthProvider = ({ children }) => {
       auth,
       login,
       logout,
+      updateUser,
       addFavoriteLocal,
       removeFavoriteLocal,
     }),

@@ -2,11 +2,13 @@ import { Route, Routes } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import AdminDashboardPage from './pages/AdminDashboardPage';
 import AdminUsersPage from './pages/AdminUsersPage';
+import AdminBooksPage from './pages/AdminBooksPage';
 import BookDetailsPage from './pages/BookDetailsPage';
 import BooksPage from './pages/BooksPage';
 import FavoritesPage from './pages/FavoritesPage';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import ProfilePage from './pages/ProfilePage';
 import RegisterPage from './pages/RegisterPage';
 import Layout from './components/Layout/Layout';
 
@@ -21,7 +23,9 @@ const App = () => {
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/admin" element={<AdminDashboardPage />} />
+        <Route path="/admin/books" element={<AdminBooksPage />} />
         <Route path="/admin/users" element={<AdminUsersPage />} />
       </Routes>
     </Layout>

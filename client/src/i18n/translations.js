@@ -6,6 +6,8 @@ const translations = {
       books: 'Books',
       favorites: 'Favorites',
       admin: 'Admin',
+      adminBooks: 'Admin Books',
+      profile: 'Profile',
       login: 'Login',
       register: 'Register',
     },
@@ -62,6 +64,8 @@ const translations = {
       books: 'ספרים',
       favorites: 'מועדפים',
       admin: 'ניהול',
+      adminBooks: 'Admin Books',
+      profile: 'Profile',
       login: 'התחברות',
       register: 'הרשמה',
     },
@@ -114,3 +118,5 @@ const translations = {
 };
 
 export default translations;
+
+

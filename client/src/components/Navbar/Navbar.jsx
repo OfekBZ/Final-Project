@@ -30,14 +30,25 @@ const Navbar = () => {
           </NavLink>
         )}
         {auth.user?.role === 'admin' && (
-          <NavLink to="/admin" className={({ isActive }) => (isActive ? styles.active : '')}>
-            {t('nav.admin')}
-          </NavLink>
+          <>
+            <NavLink to="/admin" className={({ isActive }) => (isActive ? styles.active : '')}>
+              {t('nav.admin')}
+            </NavLink>
+            <NavLink
+              to="/admin/books"
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              {t('nav.adminBooks')}
+            </NavLink>
+          </>
         )}
         <ThemeToggle />
         <LanguageToggle />
         {auth.user ? (
           <>
+            <NavLink to="/profile" className={({ isActive }) => (isActive ? styles.active : '')}>
+              {t('nav.profile')}
+            </NavLink>
             <span className={styles.userLabel}>{auth.user.name}</span>
             <button type="button" className={styles.logoutButton} onClick={logout}>
               Logout
