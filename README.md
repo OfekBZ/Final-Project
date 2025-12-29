@@ -31,11 +31,12 @@ Node.js, Express, MongoDB + Mongoose, JWT Authentication, Joi Validation, REST A
 Dashboard אדמין: סטטיסטיקות מערכת וניהול משתמשים (שינוי Role/מחיקה)
 
 תמיכה בתצוגת Dark/Light
-
 שימוש ב־MongoDB Atlas
 
 
-
+משתמש אדמין:
+email: admin@admin.com
+pw:Admin1234!
 
 התקנה והרצה
  (Server)
